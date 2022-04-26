@@ -1,0 +1,24 @@
+<!-- <div style="display: flex;">
+  <ul>
+    <li> <a routerLink="/">Accueil</a> </li>
+    <li><a routerLink="/AddTask">Ajout de tâche</a> </li>
+    <li> <a routerLink="/showTask">Voir liste des tache</a> </li>
+  </ul>
+</div> -->
+<div class="example-button-row">
+  <div class="example-flex-container">
+    <button mat-icon-button color="basic" aria-label="Example icon button with a home icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <button routerLink="/" mat-icon-button color="basic" aria-label="Example icon button with a home icon">
+      <mat-icon>home</mat-icon>
+    </button>
+    <button routerLink="/AddTask" mat-icon-button color="primary" aria-label="Example icon button with a menu icon">
+      <mat-icon>add</mat-icon>
+    </button>
+    <button routerLink="/showTask" mat-icon-button color="warn" aria-label="Example icon button with a heart icon">
+      <mat-icon>visibility</mat-icon>
+    </button>
+
+  </div>
+</div>

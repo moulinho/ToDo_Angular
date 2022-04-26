@@ -1,0 +1,11 @@
+.line
+{
+  text-decoration: line-through;
+}
+.unline
+{
+  text-decoration: null;
+}
+.example-card {
+  max-width: 400px;
+}

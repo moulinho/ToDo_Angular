@@ -1,0 +1,21 @@
+<form class="example-form" style="background-color: rgb(214, 93, 93);padding: 15px ;border-radius: 15px;" #f="ngForm"
+  (ngSubmit)="onSubmit(f)" novalidate>
+  <mat-form-field appearance="outline">
+    <mat-label>Tâche </mat-label>
+    <input name="task" matInput ngModel required pattern="^[a-z]+[A-Z]*$">
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Description</mat-label>
+    <textarea name="description" matInput ngModel required></textarea>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Select</mat-label>
+    <mat-select name="sexe" ngModel required>
+      <mat-option value="homme">Homme</mat-option>
+      <mat-option value="femme">Femme</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <div class="example-button-row">
+    <button [disabled]="!f.valid" mat-raised-button color="primary">Ajouter Tâche</button>
+  </div>
